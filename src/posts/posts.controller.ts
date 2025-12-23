@@ -12,7 +12,7 @@ export class PostsController {
   create(@Body() createPostDto: CreatePostDto) {
     return this.postsService.create(createPostDto);
   }
-  @Post('bulk')
+  @Post('/bulk')
   async addMultiplePosts(@Body() posts: CreatePostDto[]) {
     return this.postsService.createMany(posts);
   }
