@@ -2,10 +2,10 @@ import { IsString, MinLength } from 'class-validator'
 
 export class CreatePostDto {
     @IsString()
-    @MinLength(5)
+    @MinLength(3)
     title: string;
     @IsString()
-    @MinLength(1)
+    @MinLength(10)
     body: string;
     @IsString()
     @MinLength(5)

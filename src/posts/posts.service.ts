@@ -53,7 +53,7 @@ export class PostsService {
     if (!deletedCount) {
       throw new NotFoundException(`La publicación no fue encontrada`);
     }
-    return { deleted: true }
+    return true
   }
 
 
